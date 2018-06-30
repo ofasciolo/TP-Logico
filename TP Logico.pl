@@ -77,6 +77,11 @@ esFiel(Personaje):-
   
 %Punto 5/
 %Es con recursividad. /
+acataOrden(Persona1,Persona2):-
+    trabajaPara(Persona1,Persona2).
+acataOrden(Persona1,Persona2):-
+    trabajaPara(Persona1,Personita),
+    trabajaPara(Personita,Persona2).
 
 
 
